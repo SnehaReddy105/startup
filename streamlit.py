@@ -22,7 +22,7 @@ rad=st.sidebar.radio("Navigation",["Home","Sentiment Analysis","Sarcasm Detectio
 
 #Home Page
 if rad=="Home":
-    st.title("SARCASM DETECTION App")
+    st.title("SARCASM DETECTION APP")
     st.image("Complete Text Analysis Home Page.jpg")
     st.text(" ")
     st.text("The Following Text Analysis Options Are Available->")
