@@ -23,7 +23,7 @@ rad=st.sidebar.radio("Navigation",["Home","Sentiment Analysis","Sarcasm Detectio
 #Home Page
 if rad=="Home":
     st.title("SENTIMENT ANALYSIS")
-    st.image("ss.jpg")
+    st.image("SA.jpg")
     st.text(" ")
     st.text("A Twitter sentiment analysis is the process of determining the emotional tone behind a series of words, specifically on Twitter. A sentiment analysis tool is an automated technique that extracts meaningful customer information related to their attitudes, emotions, and opinions.")
 
