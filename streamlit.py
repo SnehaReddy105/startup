@@ -25,8 +25,12 @@ if rad=="Home":
     st.title("SENTIMENT ANALYSIS")
     st.image("SA.jpg")
     st.text(" ")
-    st.text("A Twitter sentiment analysis is the process of determining the emotional tone behind a series of words, specifically on Twitter.")
-    st.text("A sentiment analysis tool is an automated technique that extracts meaningful customer information related to their attitudes, emotions, and opinions.")
+    st.text("A Twitter sentiment analysis is the process of determining the emotional tone")
+    st.text("behind a series of words, specifically on Twitter.")
+    st.text("A sentiment analysis tool is an automated technique that extracts meaningful")
+    st.text("customer information related to their attitudes, emotions, and opinions.")
+    st.text("")
+    
 
 
 
@@ -82,31 +86,3 @@ if rad=="Sentiment Analysis":
         elif prediction2==1:
             st.success("Positive Text!!")
 
-
-#Sarcasm Detection Prediction
-tfidf5=TfidfVectorizer(stop_words=sw,max_features=20)
-def transform5(txt1):
-    txt2=tfidf5.fit_transform(txt1)
-    return txt2.toarray()
-
-df5=pd.read_csv("Sarcasm Detection.csv")
-df5.columns=["Text","Label"]
-x=transform5(df5["Text"])
-y=df5["Label"]
-x_train5,x_test5,y_train5,y_test5=train_test_split(x,y,test_size=0.1,random_state=0)
-model5=LogisticRegression()
-model5.fit(x_train5,y_train5) 
-
-#Sarcasm Detection Page
-if rad=="Sarcasm Detection":
-    st.header("Detect Whether The Text Is Sarcastic Or Not!!")
-    sent5=st.text_area("Enter The Text")
-    transformed_sent5=transform_text(sent5)
-    vector_sent5=tfidf5.transform([transformed_sent5])
-    prediction5=model5.predict(vector_sent5)[0]
-
-    if st.button("Predict"):
-        if prediction5==1:
-            st.exception("Sarcastic Text!!")
-        elif prediction5==0:
-            st.success("Non Sarcastic Text!!")
