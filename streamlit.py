@@ -18,14 +18,15 @@ nltk.download('punkt')
 nltk.download('stopwords')
 sw=nltk.corpus.stopwords.words("english")
 
-rad=st.sidebar.radio("Navigation",["Home","Sentiment Analysis","Sarcasm Detection"])
+rad=st.sidebar.radio("Navigation",["Home","Sentiment Analysis"])
 
 #Home Page
 if rad=="Home":
     st.title("SENTIMENT ANALYSIS")
     st.image("SA.jpg")
     st.text(" ")
-    st.text("A Twitter sentiment analysis is the process of determining the emotional tone behind a series of words, specifically on Twitter. A sentiment analysis tool is an automated technique that extracts meaningful customer information related to their attitudes, emotions, and opinions.")
+    st.text("A Twitter sentiment analysis is the process of determining the emotional tone behind a series of words, specifically on Twitter.")
+    st.text("A sentiment analysis tool is an automated technique that extracts meaningful customer information related to their attitudes, emotions, and opinions.")
 
 
 
