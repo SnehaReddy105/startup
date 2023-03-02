@@ -81,8 +81,8 @@ if rad=="Sentiment Analysis":
     prediction2=model2.predict(vector_sent2)[0]
 
     if st.button("Predict"):
-        if prediction2==0:
+        if prediction2==1:
             st.warning("Negetive Text!!")
-        elif prediction2==1:
+        elif prediction2==0:
             st.success("Positive Text!!")
 
