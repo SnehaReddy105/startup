@@ -29,7 +29,8 @@ if rad=="Home":
     st.text("behind a series of words, specifically on Twitter.")
     st.text("A sentiment analysis tool is an automated technique that extracts meaningful")
     st.text("customer information related to their attitudes, emotions, and opinions.")
-    st.text("technological advances in AI have allowed companies to use machine learning models for tweet sentiment analysis. ")
+    st.text("Technological advances in AI have allowed companies to use machine learning")
+    st.text("models for tweet sentiment analysis. ")
     
 
 
